@@ -73,6 +73,12 @@ h3 {
   left: 116%;
   top: 0%;
 }
+.footer {
+  text-align: center;
+  margin: 20px;
+  font-size: 15px;
+  font-family: sans-serif;
+}
 #geolocation {
   width: 40px;
   height: 40px;

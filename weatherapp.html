@@ -3,59 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/437a3e3f08.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/437a3e3f08.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>WeatherApp</title>
     <link rel="stylesheet" href="src/styles.css" />
-</head>
+  </head>
   <body>
     <div class="box">
-        <h1 id="city">
-            MIAMI
-        </h1>
-        <div class="temprature">
-            <h2 id=current-temp>
-                <span id="temp">28</span>
-                <span>ºC</span>
-            </h2>
+      <h1 id="city">
+        MIAMI
+      </h1>
+      <div class="temprature">
+        <h2 id="current-temp">
+          <span id="temp">28</span>
+          <span>ºC</span>
+        </h2>
+      </div>
+      <span class="emoji">
+        <i class="fas fa-sun"></i>
+      </span>
+      <h3 id="current-date"></h3>
+      <form id="search-form">
+        <div class="form-group">
+          <input
+            type="search"
+            class="form-control"
+            id="city-input"
+            placeholder="Enter city here"
+          />
+          <button type="button" class="btn btn-light" id="geolocation">
+            <i class="fa fa-compass" aria-hidden="true"></i>
+          </button>
         </div>
-        <span class="emoji">
-            <i class="fas fa-sun"></i>
-        </span>
-        <h3 id="current-date"></h3>
-        <form id="search-form">
-            <div class="form-group">
-                <input type="search" class="form-control" id="city-input" placeholder="Enter city here" />
-                <button type="button" class="btn btn-light" id="geolocation"><i class="fa fa-compass"
-                        aria-hidden="true"></i></button>
-            </div>
-        </form>
-        <div class="row">
-            <div class="col">MON</div>
-            <div class="col">TUES</div>
-            <div class="col">WED</div>
-            <div class="col">THUS</div>
-            <div class="col">FRI</div>
+      </form>
+      <div class="row">
+        <div class="col">MON</div>
+        <div class="col">TUES</div>
+        <div class="col">WED</div>
+        <div class="col">THUS</div>
+        <div class="col">FRI</div>
+      </div>
+      <div class="container">
+        <div class="row" id="icons">
+          <div class="col"><i class="fas fa-cloud"></i></div>
+          <div class="col"><i class="fas fa-cloud-sun"></i></div>
+          <div class="col"><i class="fas fa-cloud-rain"></i></div>
+          <div class="col"><i class="fas fa-cloud-rain"></i></div>
+          <div class="col"><i class="fas fa-cloud-sun"></i></div>
         </div>
-        <div class="container">
-            <div class="row" id="icons">
-                <div class="col"><i class="fas fa-cloud"></i></div>
-                <div class="col"><i class="fas fa-cloud-sun"></i></div>
-                <div class="col"><i class="fas fa-cloud-rain"></i></div>
-                <div class="col"><i class="fas fa-cloud-rain"></i></div>
-                <div class="col"><i class="fas fa-cloud-sun"></i></div>
-            </div>
-            <div class="row" id="forcast">
-                <div class="col">87°F</div>
-                <div class="col">87°F</div>
-                <div class="col">85°F</div>
-                <div class="col">84°F</div>
-                <div class="col">84°F</div>
-            </div>
+        <div class="row" id="forcast">
+          <div class="col">87°F</div>
+          <div class="col">87°F</div>
+          <div class="col">85°F</div>
+          <div class="col">84°F</div>
+          <div class="col">84°F</div>
         </div>
-        <script src="src/script.js"></script>
+      </div>
+    </div>
+    <p class="footer">
+      <a href="https://github.com/Tamara-sm/Project-weather-app" target="_blank"
+        >source code</a
+      >
+      👾, by Tamara
+    </p>
+    <script src="src/script.js"></script>
   </body>
 </html>
