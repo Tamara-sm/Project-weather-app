@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+  </head>
+  <body>
+    <div class="box">
+        <h1 id="city">
+            MIAMI
+        </h1>
+        <div class="temprature">
+            <h2 id=current-temp>
+                <span id="temp">28</span>
+                <span>ºC</span>
+            </h2>
+        </div>
+        <span class="emoji">
+            <i class="fas fa-sun"></i>
+        </span>
+        <h3 id="current-date"></h3>
+        <form id="search-form">
+            <div class="form-group">
+                <input type="search" class="form-control" id="city-input" placeholder="Enter city here" />
+                <button type="button" class="btn btn-light" id="geolocation"><i class="fa fa-compass"
+                        aria-hidden="true"></i></button>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col">MON</div>
+            <div class="col">TUES</div>
+            <div class="col">WED</div>
+            <div class="col">THUS</div>
+            <div class="col">FRI</div>
+        </div>
+        <div class="container">
+            <div class="row" id="icons">
+                <div class="col"><i class="fas fa-cloud"></i></div>
+                <div class="col"><i class="fas fa-cloud-sun"></i></div>
+                <div class="col"><i class="fas fa-cloud-rain"></i></div>
+                <div class="col"><i class="fas fa-cloud-rain"></i></div>
+                <div class="col"><i class="fas fa-cloud-sun"></i></div>
+            </div>
+            <div class="row" id="forcast">
+                <div class="col">87°F</div>
+                <div class="col">87°F</div>
+                <div class="col">85°F</div>
+                <div class="col">84°F</div>
+                <div class="col">84°F</div>
+            </div>
+        </div>
+  </body>
+</html>
